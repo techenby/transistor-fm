@@ -1,0 +1,27 @@
+{
+    "name": "techenby/transistor-fm",
+    "autoload": {
+        "psr-4": {
+            "Techenby\\TransistorFm\\": "src"
+        }
+    },
+    "authors": [
+        {
+            "name": "Andy Newhouse"
+        }
+    ],
+    "support": {
+        "email": "hi@andymnewhouse.me"
+    },
+    "extra": {
+        "statamic": {
+            "name": "Transistor Fm",
+            "description": "Transistor FM addon"
+        },
+        "laravel": {
+            "providers": [
+                "Techenby\\TransistorFm\\ServiceProvider"
+            ]
+        }
+    }
+}
