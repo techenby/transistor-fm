@@ -23,5 +23,9 @@
                 "Techenby\\TransistorFm\\ServiceProvider"
             ]
         }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^7.4",
+        "illuminate/support": "^9.12"
     }
 }

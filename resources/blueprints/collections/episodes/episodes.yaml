@@ -1,0 +1,195 @@
+title: Episodes
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: number
+        field:
+          display: Number
+          type: integer
+          icon: integer
+          listable: true
+          instructions_position: above
+          read_only: false
+      -
+        handle: season
+        field:
+          display: Season
+          type: integer
+          icon: integer
+          listable: true
+          instructions_position: above
+          read_only: false
+  not-editable:
+    display: 'Not Editable'
+    fields:
+      -
+        handle: transistor_id
+        field:
+          type: text
+          read_only: true
+          display: 'Transistor ID'
+          instructions_position: above
+          listable: hidden
+          input_type: text
+          antlers: false
+      -
+        handle: status
+        field:
+          display: Status
+          type: text
+          read_only: true
+      -
+        handle: published_at
+        field:
+          display: 'Published At'
+          type: text
+          read_only: true
+      -
+        handle: duration
+        field:
+          display: Duration
+          type: integer
+          read_only: true
+      -
+        handle: explicit
+        field:
+          display: Explicit
+          type: toggle
+          read_only: true
+      -
+        handle: keywords
+        field:
+          display: Keywords
+          type: text
+          read_only: true
+      -
+        handle: media_url
+        field:
+          display: 'Media URL'
+          type: text
+          read_only: true
+      -
+        handle: image_url
+        field:
+          display: 'Image URL'
+          type: text
+          read_only: true
+      -
+        handle: author
+        field:
+          display: Author
+          type: text
+          read_only: true
+      -
+        handle: summary
+        field:
+          display: Summary
+          type: text
+          read_only: true
+      -
+        handle: description
+        field:
+          display: Description
+          type: text
+          read_only: true
+      -
+        handle: created_at
+        field:
+          display: 'Created At'
+          type: text
+          read_only: true
+          instructions_position: above
+          listable: hidden
+          mode: single
+          time_enabled: true
+          time_seconds_enabled: true
+          full_width: false
+          inline: false
+          columns: 1
+          rows: 1
+      -
+        handle: updated_at
+        field:
+          display: 'Updated At'
+          type: text
+          read_only: true
+          instructions_position: above
+          listable: hidden
+          mode: single
+          time_enabled: true
+          time_seconds_enabled: true
+          full_width: false
+          inline: false
+          columns: 1
+          rows: 1
+      -
+        handle: formatted_published_at
+        field:
+          display: 'Formatted Published At'
+          type: text
+          read_only: true
+      -
+        handle: duration_in_mmss
+        field:
+          display: 'Formatted Duration'
+          type: text
+          read_only: true
+      -
+        handle: share_url
+        field:
+          display: 'Share URL'
+          type: text
+          read_only: true
+      -
+        handle: formatted_summary
+        field:
+          display: 'Formatted Summary'
+          type: text
+          read_only: true
+      -
+        handle: embed_html
+        field:
+          display: 'Embed HTML'
+          type: text
+          read_only: true
+      -
+        handle: embed_html_dark
+        field:
+          display: 'Embed HTML (Dark)'
+          type: text
+          read_only: true
+      -
+        handle: audio_processing
+        field:
+          display: 'Audio Processing'
+          type: toggle
+          read_only: true
+      -
+        handle: type
+        field:
+          display: Type
+          type: text
+          read_only: true
+      -
+        handle: email_notifications
+        field:
+          display: 'Email Notifications'
+          type: text
+          read_only: true
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
